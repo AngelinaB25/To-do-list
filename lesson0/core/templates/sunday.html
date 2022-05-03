@@ -12,15 +12,11 @@
             my to do list for sunday
         </h1>
         <ol>
-            <li>
-                to play piano
-            </li>
-            <li>
-                to clean the wardtobe
-            </li>
-            <li>
-                to play with the cat
-            </li>
+          {% for todo in todo_list %}
+          <li>
+              {{todo}}
+          </li>
+          {% endfor%}
         </ol>
     </body>
 </html>
