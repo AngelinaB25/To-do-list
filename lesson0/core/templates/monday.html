@@ -12,18 +12,11 @@
             my to fo list for monday
         </h1>
         <ol>
-            <li>
-                to feed the cat
-            </li>
-            <li>
-                to practice to the exam
-            </li>
-            <li>
-                to clean the room
-            </li>
-            <li>
-                {{todo_1}}
-            </li>
+          {% for todo in todo_list %}
+          <li>
+              {{todo}}
+          </li>
+          {% endfor%}
         </ol>
     </body>
 </html>
